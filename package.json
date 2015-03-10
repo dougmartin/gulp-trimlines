@@ -1,0 +1,41 @@
+{
+  "name": "gulp-trimlines",
+  "version": "1.0.0",
+  "description": "Trim leading and/or trailing spaces per line",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "gulp",
+    "trim"
+  ],
+  "author": {
+    "name": "Doug Martin",
+    "web": "http://dougmart.in"
+  },
+  "contributors": [],
+  "homepage": "http://github.com/dougmartin/gulp-trimlines",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dougmartin/gulp-trimlines.git"
+  },
+  "bugs": "https://github.com/dougmartin/gulp-trimlines/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/dougmartin/gulp-trimlines/raw/master/LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "should": "^5.1.0",
+    "gulp": "^3.8.11",
+    "stream-array": "^1.0.1",
+    "stream-assert": "^2.0.2",
+    "gulp-util": "^3.0.4"
+  }
+}
