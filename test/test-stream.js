@@ -6,7 +6,7 @@ module.exports = function () {
 
   function create(contents) {
     return new File({
-      contents: new Buffer(contents),
+      contents: contents !== null ? new Buffer(contents) : null
     });
   }
 
