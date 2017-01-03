@@ -10,7 +10,7 @@ function gulpTrimLines(options) {
   options.leadingPattern = options.leadingPattern || '[ \\t]+';
   options.trailingPattern = options.trailingPattern || '[ \\t]+';
   options.encoding = options.encoding || 'utf8';
-  
+
   // create the regex
   if (options.pattern) {
     regex = new RegExp(options.pattern, 'gm');
@@ -25,9 +25,9 @@ function gulpTrimLines(options) {
     }
     regex = patterns.length > 0 ? new RegExp(patterns.join('|'), 'gm') : null;
   }
-      
+
   return through.obj(function(file, encoding, done) {
-    if (regex) {
+    if (regex && (file.contents !== null)) {
       file.contents = new Buffer(file.contents.toString(options.encoding).replace(regex, ""));
     }
     this.push(file);

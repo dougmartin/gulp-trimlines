@@ -1,6 +1,6 @@
 {
   "name": "gulp-trimlines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trim leading and/or trailing spaces per line",
   "main": "index.js",
   "scripts": {
